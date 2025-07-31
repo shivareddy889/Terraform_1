@@ -9,3 +9,8 @@ resource "aws_instance" "key_pair" {
     }
         
     }
+
+    resource "aws_instance" "myvm" {
+         ami           = "ami-0f918f7e67a3323f0"
+         instance_type = "t2.micro"
+}

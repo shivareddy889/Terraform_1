@@ -3,7 +3,7 @@ output "instance_public_ips" {
 }
 
 output "instance_private_ips" {
-  value = aws_instance.key_pair[*].private_ip
+  value = aws_instance.key_pair[1].private_ip
 }
 
 output "key"{
